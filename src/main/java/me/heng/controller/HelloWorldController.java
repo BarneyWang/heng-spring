@@ -58,7 +58,6 @@ public class HelloWorldController {
         CloseableHttpResponse response = null ;
         try {
             response = httpclient.execute(httpGet);
-
             HttpEntity entity = (HttpEntity) response.getEntity();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(entity.getContent()));
             String total = "";
